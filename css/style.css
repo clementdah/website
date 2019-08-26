@@ -143,7 +143,7 @@ section > nav
 
 .amination-sync2
 {
-    color: pink;
+    color: rgb(240, 146, 162);
     margin-right: 10px;
 }
 
@@ -316,7 +316,7 @@ aside img
 
 /*main de Labs*/
 
-.main-work
+.main-labs
 {
     display: flex;
     flex-flow: wrap;
@@ -324,21 +324,34 @@ aside img
     
 }
 
-.img-work
+.img-labs
 {
-    color: black;
+    color: white;
     text-align: center;
     margin: 10px;
+    background: rgba(26, 30, 46);
+    border-radius: 5px;
+}
+
+.img-labs p
+{
+    margin-top: 5px;
+}
+
+.img-labs img
+{
+    border: 2px solid rgba(26, 30, 46);   
+}
+
+
+
+/*main de contact*/
+
+.main-labs
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around; 
     
 }
 
-.img-work p
-{
-    margin-top: 0px;
-}
-
-.img-work img
-{
-    border: 1px solid black;
-    border-radius: 5px;
-}
