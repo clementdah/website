@@ -7,6 +7,8 @@ body
 {
     background: rgb(180, 74, 154, 0.5);
     color: black;
+    margin: 0px;
+    padding: 0px;
     /*width: 100%;
     margin: 10px;  
     font-family: 'Arial Narrow', Arial, sans-serif;*/
@@ -28,15 +30,16 @@ body
 .main > nav
 {
     width: 20%;
-    padding-top: 50px;
+    padding-top: 95px;
     display: flex;
     flex-flow: column;
     align-items: center;
-    background: rgba(26, 30, 46);
+    background: url('../imag/nav.png') no-repeat 0px 0px;
+    background-size: cover;
     font-family: sans-serif;
-    /*background: rgba(3, 3, 3, 0.9);*/
+    /*background: rgba(3, 3, 3, 0.9);
     border-radius: 3% 0 0 3%;
-    /*background: url('../nav.jpg') no-repeat fixed;*/
+    background: url('../nav.jpg') no-repeat fixed;*/
     /*background: rgba(0, 0, 0, 0.918);*/
 }
 
@@ -78,7 +81,8 @@ body
     flex-flow: wrap;
     justify-content: center;
     font-size: 1.8em;
-    margin-top: 80px;
+    margin-top: 70px;
+    color: rgb(0, 0, 0, 0.3);
     /*font-weight: 900;*/
 }
 
@@ -90,6 +94,7 @@ body
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 20px;
+    opacity: 0.5;
 }
 
 .favicon a
@@ -117,8 +122,9 @@ section
     /*background: rgba(41, 25, 37, 0.918);*/
     color: white;
     padding: 30px;
-    padding-bottom: 10px;
-    background: rgb(230, 232, 236);
+    padding-bottom: 40px;
+    background: url('../imag/section.png') no-repeat 0px 0px;
+    background-size: cover;
 }
 
 
@@ -134,9 +140,9 @@ section > nav
     height: 50px;
     font-family: sans-serif;
     text-decoration: none;
-    background: rgba(26, 30, 46);
+    /*background: rgba(26, 30, 46);
     border-radius: 50px;
-    /*border: 1px solid rgb(236, 19, 164);*/
+    border: 1px solid rgb(236, 19, 164);*/
 }
 
 .nav-titre
@@ -145,6 +151,7 @@ section > nav
     display: inline-block;
     font-weight: lighter;
     padding: 10px;
+    border-bottom: 2px solid rgb(240, 146, 162);
     /*background: rgb(236, 19, 164);
     border-radius: 20%;*/
 }
@@ -188,10 +195,11 @@ article
     align-items: center;
     /*border: 1px solid rgb(236, 19, 164);*/
     width: 45%;
-    /*background: rgb(65, 63, 63);*/
+    /*background: rgb(65, 63, 63);
     background: rgb(25, 19, 44, 0.9);
+    box-shadow: 8px 8px 6px black;*/
     border-radius: 5%;
-    box-shadow: 8px 8px 6px black;
+    
 }
 
 .cadre-about h1
@@ -219,7 +227,7 @@ article
 .cadre-about p
 {
     margin-top: 0px;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
     font-size: 1.3em;
     line-height: 1.6;
     padding: 20px;
@@ -287,8 +295,9 @@ aside img
 {
     width: 470px;
     height: 480px;
-    border-radius: 5%;
-    box-shadow: -8px 8px 6px black;
+    /*border-radius: 5%;*/
+    box-shadow: 0px 0px 30px rgb(25, 22, 43);
+    border: 1px solid rgb(25, 22, 43);
 }
 
 
@@ -299,13 +308,13 @@ aside img
 {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around; 
-    
+    justify-content: space-around;
+    padding-top: 20px;   
 }
 
 .img-work
 {
-    color: black;
+    color: white;
     text-align: center;
     margin: 10px;
     
@@ -335,8 +344,8 @@ aside img
 {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around; 
-    
+    justify-content: space-around;
+    padding-top: 20px;    
 }
 
 .img-labs
@@ -387,7 +396,7 @@ form
 
 .main-contact p
 {
-    color: rgb(8, 8, 8);
+    color: rgb(226, 225, 225, 0.7);
     font-family: sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -402,6 +411,10 @@ textarea
     height: 150px;
     font-size: 15px;
     font-family: sans-serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: rgb(25, 22, 43);
+    border: 1px solid rgb(102, 99, 99, 0.5);
 }
 
 textarea:hover
@@ -414,6 +427,9 @@ input[type="text"]
     height: 50px;
     width: 350px;
     margin-bottom: 10px;
+    padding-left: 10px;
+    background: rgb(25, 22, 43);
+    border: 1px solid rgb(102, 99, 99, 0.5);
 }
 
 input[type="text"]:hover
@@ -430,7 +446,7 @@ form div
 
 .les-btn-form
 {
-    margin-top: 10px; 
+    margin-top: 15px; 
     justify-content: flex-start;
 }
 
@@ -441,11 +457,12 @@ input[type="submit"]
     justify-content: center;
     color: inherit;
     text-decoration: none;
-    background: rgb(0, 0, 0, 0.8);
+    background: rgb(0, 0, 0, 0.5);
     width: 200px;
     height: 50px;
     font-size: 15px;
     font-family: sans-serif;
+    border: none;
 }
 
 input[type="submit"]:hover
@@ -467,7 +484,7 @@ input[type="submit"]:hover
 
 .favicon-contact a
 {
-    color: black;
+    color: rgb(241, 240, 240, 0.5);
 }
 
 .favicon-contact a:hover
